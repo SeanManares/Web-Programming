@@ -1,0 +1,70 @@
+#header-text {
+    color: #ffffff;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+    background-size: auto; /* Makes the background fit the text */
+    padding: 20px; /* Adds some padding around the text */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* White text shadow */
+}
+
+#first {
+    text-align: center;
+}
+
+#marquee {
+width: 150px;
+border:1px solid;
+}
+
+mark {
+    background-color: hsla(0, 100%, 83%, 0.5);
+    display: inline-block;
+}
+
+#color {
+    color: red;
+}
+
+#padding {
+    padding: 10px;
+    width:50%;
+    background-color:aqua;
+}
+
+#img1 {
+    width:100px; 
+    height:100px; 
+    float: left;
+}
+
+#align {
+    text-align:center;
+    border: 1px solid rgb(60, 60, 221);
+    width: 50%;
+}
+
+#clear {
+    clear:left;
+}
+
+#overflow {
+    overflow: auto;
+    width: 160px;
+    height: 150px;
+    background-color:rgb(154, 255, 255);
+}
+
+#bg-color {
+    background-color:aquamarine;
+    width: 20%;
+}
+
+#dotted {
+    border-style: dotted;
+    width:50%;
+}
+
+#sample2 {
+    height: 150px;
+    width: 150px;
+}

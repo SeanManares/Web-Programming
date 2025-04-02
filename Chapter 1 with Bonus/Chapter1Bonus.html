@@ -1,0 +1,191 @@
+<!DOCTYPE html>                 <!--It ensures that the browser know that this is an html file-->
+<html lang="en">                 
+<head>
+    <meta charset="UTF-8"> 
+    <link rel="stylesheet" href="Chapter1Bonus.css" type="text/css"> <!-- I added css(external) by using the <link> tag -->
+    <title>Chapter 1 Bonus</title>
+</head>
+<body>
+    <h1 id="header-text">HTML and CSS Quick-Reference Guide</h1> <!--I used id to create a specific style declaration in this line of code only-->
+    <p id="first">
+        This website covers all of the tags that have been discussed over the course  
+        of web programming with description of how to use them and code examples.
+    </p>
+
+    <h2>HTML Tags</h2>
+        <h3><mark>&lt;h1&gt; to &lt;h6&gt;</mark></h3>  <!--1st-->
+        <p>It defines html headings. &lt;h1&gt; stands out the most as it is 
+            usually the largest font on the page, &lt;h6&gt; on the other hand,
+            is the smallest heading tag.</p>
+        <pre><code>&lt;h5&gt;Heading&lt;/h5&gt;</code></pre>
+        <h5>This is how &lt;h5&gt; heading looks like</h5>
+            
+        <h3><mark>&lt;p&gt;</mark></h3>                 <!--2nd-->
+        <p>It defines a paragraph.</p>
+        <pre><code>&lt;p&gt;This is a paragraph.&lt;/p&gt;</code></pre>
+            
+        <h3><mark>&lt;marquee&gt;</mark></h3>           <!--3rd-->
+        <p>It is a tag that defines a scrolling text area in the html document that moves across
+            the page in a horizontal or vertical direction.</p>
+        <pre><code>&lt;marquee&gt;Hello World&lt;/marquee&gt;</code></pre>
+        
+        <p>Output:</p>
+        <marquee id="marquee">Hello World</marquee>
+
+        <h3><mark>&lt;table&gt;</mark></h3>             <!--4th-->
+        <p>This creates a table in the webpage.</p>
+        <pre><code>&lt;table border="1px"&gt;     <!--border adds a line separating the table headers and datas-->
+    &lt;tr&gt;                                   <!--tr stands for table row-->
+        &lt;th&gt;Header 1&lt;/th&gt;
+        &lt;th&gt;Header 2&lt;/th&gt;            <!--th stands for table header-->
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Data 1&lt;/td&gt;              <!--td stands for table data-->
+        &lt;td&gt;Data 2&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;</code></pre>
+
+            <p>Output:</p>
+
+            <table border="1px">
+                <tr>                            
+                    <th>Header 1</th>           
+                    <th>Header 2</th>
+                </tr>
+                <tr>
+                    <td>Data 1</td>              
+                    <td>Data 2</td>
+                </tr>
+            </table>
+
+        <h3><mark>&lt;img&gt;</mark></h3>                  <!--5th-->
+        <p>This defines an image in the webpage.</p>
+        <pre><code>&lt;img src="image.jpg" width="100px" height="100"&gt;</code></pre>
+        <p>Output:</p>
+        <img src="sample img.jpg" width="100px" height="100px" border="1px">
+
+        <h3><mark>&lt;ul&gt; and &lt;li&gt;</mark></h3>     <!--6th-->
+        <p>This defines unordered list and list items.</p>  
+        <pre><code>&lt;ul&gt;
+    &lt;li&gt;Item 1&lt;/li&gt;
+    &lt;li&gt;Item 2&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+
+        <h3><mark>&lt;ol&gt; and &lt;li&gt;</mark></h3>     <!--7th-->
+        <p>This defines ordered list and list items.</p>
+        <pre><code>&lt;ol&gt;
+    &lt;li&gt;First item&lt;/li&gt;
+    &lt;li&gt;Second item&lt;/li&gt;
+&lt;/ol&gt;</code></pre>
+
+        <h3><mark>&lt;div&gt;</mark></h3>                   <!--8th-->
+        <p>Defines a division or section in an HTML document.</p>
+        <pre><code>&lt;div&gt;This is a division.&lt;/div&gt;</code></pre>
+
+        <h3><mark>&lt;span&gt;</mark></h3>                  <!--9th-->
+        <p>Defines a section in a document, mostly used for styling.</p>
+        <pre><code>&lt;span style="color: red;"&gt;This is a span.&lt;/span&gt;</code></pre>
+        <p>Output:</p>
+        <p>this is a <span style="color:red;">span</span></p>
+
+        <h3><mark>&lt;form&gt;</mark></h3>                  <!--10th-->
+        <p>It is used to create an HTML form for user input.</p>
+        <pre><code>&lt;form action="/submit" method="post"&gt;
+    &lt;input type="text" name="name"&gt;
+    &lt;input type="submit" value="Submit"&gt;
+&lt;/form&gt;</code></pre>
+<p>Output:</p>
+<form action="/submit" method="post">
+<input type="text" name="name">
+<input type="submit" value="Submit">
+</form>
+
+    <h2>CSS Properties</h2>                                 
+            <h3><mark>color</mark></h3>
+            <p>It sets the color of a text.</p>
+            <pre><code>id {
+    color: red;
+}</code></pre>
+<p>Output:</p>
+    <p id="color">Color red</p>
+
+        <h3><mark>padding</mark></h3>                      
+        <p>It is used to create space around an element's content, inside of any defined borders.</p>
+        <pre><code>id {
+    padding: 10px;
+}</code></pre>
+<p>Output:</p>
+    <p id="padding">Padding</p>
+
+<div>
+        <h3><mark>float</mark></h3>
+            <p>The CSS float property is used for positioning and formatting content.
+                For example, the picture can be positioned at the left of the text.
+            </p>
+            <pre><code>id {
+    float: left;
+}</code></pre>
+        <p>Output:</p>
+            <p><img id="img1" src="sample img.jpg">This is an image.</p>
+</div>
+
+<div id="clear">
+        <h3><mark>align</mark></h3>
+            <p>Align specifies how flex lines are distributed along the cross axis 
+                in a flexbox container.
+            </p>
+            <pre><code>id {
+    text-align: center;
+}</code></pre>
+<p>Output:</p>
+        <p id="align">The text is centered.</p>
+</div>
+
+<div>
+    <h3><mark>overflow</mark></h3>
+    <p>overflow controls what happens to content that is too big to fit in the given area.</p>
+    <pre><code>id {
+        overflow: auto; 
+        width: 160px;
+        height: 150px;
+        background-color: aqua;
+    }</code></pre>
+    <p>Output:</p>
+        <p id="overflow">This is an example of overflow with a scroll bar, 
+            it also have the following values: visible, hidden, and auto.
+            Visible is the default, the overflow is not clipped. Hidden is the overflow is clipped,
+            and the rest of the content will be invisible. Scroll adds a scrollbar even if not needed,
+            while auto adds scroll bar only when necessary.</p>
+</div>
+
+<div>
+    <h3><mark>background-color</mark></h3>
+    <p>It specifies the background color of an element.</p>
+    <pre><code>id {
+        background color
+    }</code></pre>
+    <p>Output:</p>
+        <p id="bg-color">This is background color of an element</p>
+</div>
+
+<div>
+    <h3><mark>border-style</mark></h3>
+    <p>it specifies what kind of border to display. There are different border style but one example is the <i>Dotted</i> border</p>
+    <pre><code>id {
+        border-style: dotted;
+    }</code></pre>
+    <p>Output:</p>
+        <p id="dotted">This is the dotted border style</p>
+</div>
+
+<div>
+    <h3><mark>background-image</mark></h3>
+    <p>It specifies an image to use as the background of an element, usually put in the head tag.</p>
+    <pre><code>id {
+        background-image: url("image.jpg");
+    }</code></pre>
+    <p>Output:</p>
+    <img id="sample2" src="sample2.jpg">
+    <p id="text1">This area shows a background image</p>
+</div>
+
