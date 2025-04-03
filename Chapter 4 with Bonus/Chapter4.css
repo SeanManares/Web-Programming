@@ -1,0 +1,103 @@
+body {
+    font-family: 'Arial', 'sans-serif';
+    margin: 0px;
+}
+
+header {
+    text-decoration: underline;
+    text-underline-offset: 5px;
+    font: Tahoma 700; /*700 sets the font weight*/
+    text-align: center;
+    color: white;
+    background-color:#17072b;
+    padding: 7px 0px 1px 0px;
+}
+
+h2 {
+    text-decoration: underline;
+    text-underline-offset: 5px;
+}
+
+nav {
+    background-color: #17072b;
+}
+
+nav ul {
+    list-style-type: none; /*removes the bullet from ul*/
+    padding: 0px 5px 13px 5px;
+    margin: 0px;
+    text-align: center;
+}
+
+nav li {
+    padding: 0px 10px 0px 10px;
+    display:inline;
+}
+
+nav a {
+    color:white;
+    text-decoration: none;
+}
+
+main {
+    font-weight: 400;
+    color: #000000;
+    display:flex;
+}
+
+section {
+    flex:60%;
+    padding: 0px 20px;
+}
+
+#welcomeimg {
+    width: 720px;
+    height:300px;
+    margin-top: 15px;
+}
+
+aside {
+    flex:40%;
+    padding: 0px 0px 0px 20px;
+    margin: 0px;
+    color: white;
+    background-color: #172d67;
+}
+
+aside ul {
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+aside li {
+    line-height: 2.5;
+    padding: 0px 0px 12px 0px;
+}
+
+.asidepic {
+    display: flex;
+    justify-content: space-between;
+    width: auto;
+    height: 175px;
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+
+#num1 {
+    padding-right: 5px;
+}
+
+#num2 {
+    margin-right: 23px;
+}
+
+
+
+footer {
+    background-color: #8c15e9;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 10px 0px;
+    margin-top: 5px;
+}

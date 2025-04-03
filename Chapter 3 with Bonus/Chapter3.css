@@ -1,0 +1,58 @@
+body {
+    background-color: white;
+    margin: 0px;
+    padding: 0px;
+}
+
+p {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f0f0f0;
+    padding: 10px;
+}
+
+#note {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #ffffff;
+    padding: 0px;
+    color: black;
+}
+
+h1 {
+    text-align: center;
+    padding: 2px;
+    background-color: #ffffff;
+}
+
+img {
+    display: block;
+    margin: auto; /*this is to center the images */
+    filter: brightness(1000%); /*I used filter to change the appearance of my images*/
+}
+
+img:hover {
+    filter:none; /*remove the filter*/
+    transition:.3s;   /*this is to smoothly remove the brightness filter*/
+}
+
+div {
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.1); /* This creates a box like design in my element, the 0 is for horizontal offset, 5px for vertical, 5px for blur radius */
+    border-radius: 5px;
+}
+
+#first {
+    width: 500px;
+    height: 264px;
+    /*i find the new height by computing the new width to the original height then dividing it to the original width to retain the original aspect ratio of the image*/
+}
+
+#second {
+    width: 500px;
+    height: auto; /*other way to retain the original aspect ratio is to use the auto on the height and set a fixed width*/
+}
+
+#third {
+    width: 500px;
+    height: auto;
+}

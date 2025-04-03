@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--This gives the browser instructions on how to control the page's dimensions and scaling depending on the device-->
+    <link rel="stylesheet" href="Chapter6.css"> <!--this is the link to the CSS file -->
+    <title>Chapter 6: Petrol Calculator</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Petrol Calculator</h1>
+        <label for="cost">Cost of petrol per liter:</label> <!--it allows the users to click on the label to select the associated input field-->
+        <input type="number" value="1.72" step="0.01" id="cost" required>  <!--the step specifies the interval between legal numbers, while required means that it is mandatory to put a value in this field-->
+
+        <label for="purchased">Number of Liters Purchased:</label>
+        <input type="number" value="0" step="0.01" id="purchased" required>
+
+        <button onclick = "calculate()">Calculate Total Cost</button>  <!--onclick is used to call the function from javascrip-->
+
+        <p id="total">Total Cost: AED 0.00</p> <!-- This is the display area for the total cost -->
+    </div>
+
+    <script src="Chapter6.js"></script> <!-- This is the link that connects the html to javascipt -->
+</body>
+</html>

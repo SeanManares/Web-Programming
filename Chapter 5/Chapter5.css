@@ -1,0 +1,7 @@
+.vid {
+    display: flex;   /*its a layout module to easily align the vid */
+    justify-content: center; /*this is to center the video horizontally */
+    align-items: center; /*this is to center the vid vertically */
+    height:100vh; /*full viewport height, it takes all the vertical height of the screen*/
+}
+

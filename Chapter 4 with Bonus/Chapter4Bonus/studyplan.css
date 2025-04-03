@@ -1,0 +1,107 @@
+body {
+    font-family: 'Arial', 'sans-serif';
+    margin: 0;
+    padding: 0;
+    background-color:rgb(11, 15, 255);
+    color: black;
+}
+
+nav {
+    background-color: aliceblue;
+    padding: 5px 0;
+}
+
+nav ul {
+    list-style-type: none; /*removes the bullet from ul*/
+    text-align:center
+}
+
+nav li {
+    display:inline; /*this makes the links side by side */
+    padding: 15px 10px; 
+}
+
+nav li:hover {
+    background-color:rgb(235, 235, 235);
+    transition: .2s;
+}
+
+nav a {
+    color:black;
+    text-decoration: none;
+    font-weight: 520;
+}
+
+h1 {
+    font: Tahoma 520;
+    text-align:start;
+    color: white;
+    margin-left: 50px;
+}
+
+h2 {
+    font-weight: 400px;
+    padding-top: 25px;
+}
+
+
+.padd {
+    padding-left: 50px;
+    margin-left: 50px;
+    font-weight: 400;
+    background-color:aliceblue;
+    border-radius: 4px; /*makes the borders round */
+    color: #000000;
+}
+
+.inl {
+    display:flex;   
+}
+
+.firstdiv {
+    flex: 60%;
+    padding-left: 25px;
+    background-color:rgb(187, 223, 255);
+    border-radius: 4px;
+}
+
+section div ul li {
+    line-height: 3;
+}
+
+.seconddiv {
+    flex: 40%;
+    padding-left: 25px;
+    background-color:beige;
+    border-radius:4px; 
+}
+
+.adds {
+    margin: 15px 0;
+    border: none; /*this removes the standard design of button */
+    padding: 10px;
+    border: none;
+    width: 10%;
+    border-radius: 4px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* a little bit of shadow */        
+    color: rgb(0, 0, 0); /* Button text color */
+    cursor: pointer; /* Pointer cursor on hover */
+    background-color: rgb(194, 195, 228);
+    transition: background-color 0.1s; /* Smooth transition for background color */
+}
+    
+    /* Hover effect for the button */
+.adds:hover {
+    background-color: rgb(153, 154, 223); /* light blue on hover */
+}
+
+
+footer {
+    background-color: rgb(11, 14, 230);
+    color: #FFFFFF;
+    text-align: center;
+    position: fixed;   /*this makes the footer fixed at the bottom */
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}

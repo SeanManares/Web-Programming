@@ -1,0 +1,72 @@
+* {     /* the * selects all html elements on the webpage */
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    display:flex;   /*its a layout module to easily align the calculator */
+    justify-content: center; /*this is to center horizontally */
+    align-items: center; /*this is to center vertically */
+    background-color: #00485c; /* White background for the container */
+    height:100vh; /*full viewport height, it takes all the vertical height of the screen*/
+    text-align: center;
+}
+
+.container {
+    background-color: white;
+    width:300px;
+    padding: 30px 30px 30px 12px; /*to make the input fields centered */
+    border-radius: 10px; /*makes the corners round */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* a lil bit of shadow */
+}
+
+h1 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+/* Styling for the button */
+button {
+    padding: 10px;
+    border: none;
+    width: 100%; /* Full width */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* a little bit of shadow */
+    color: rgb(255, 246, 246); /* Button text color */
+    cursor: pointer; /* Pointer cursor on hover */
+    background-color: #00485c;
+    transition: background-color 0.1s; /* Smooth transition for background color */
+}
+
+/* Hover effect for the button */
+button:hover {
+    background-color: #0056b3; /* light blue on hover */
+}
+
+/* Styling for labels */
+label {
+    display: block; 
+    margin-bottom: 5px; /* Space below labels */
+}
+
+/* Styling for input fields */
+input {
+    width: 100%; /* Full width */
+    padding: 10px; /* Padding inside input fields */
+    border: 1px solid #00485c;
+    border-radius: 3px; /* Rounded corners */
+    margin-bottom: 20px; /* Space below input fields */
+    transition: border-color 0.2s; /* Smooth transition for border color */
+}
+
+input[type="number"]:focus {  /*this focuses on the input field when it is in use */
+    border-width:2px;
+    border-color: #00485c;  
+    outline: none;
+}
+
+#total {
+    margin-top: 20px;
+    font-size: 15px;
+}

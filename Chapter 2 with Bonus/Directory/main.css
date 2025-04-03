@@ -1,0 +1,73 @@
+html {
+    scroll-behavior: smooth; /* Makes the nav bar scroll smooth not just directly going to the specific section of the webpage*/
+}
+
+body {
+    font-family: Arial, sans-serif;  /*family-name, the second one is generic-family, it will pick the 2nd one if the first is not available*/
+    line-height: 1.5; /* This sets the distance between lines of text*/
+    margin: 0px;
+    padding: 0px;
+} 
+#p1 {
+    text-align: center;
+}
+#oview { 
+    text-align: center
+}
+
+nav {
+    background-color: #333;
+    color: white;
+    padding: 10px 0px;
+}
+
+nav ul {
+    list-style-type: none; /* I used this to remove the bullet, margin, and padding from the list item */
+    margin: 0; 
+    padding: 0; /*removes space around the text*/
+    text-align: center;
+}
+
+nav ul li {
+    display:inline; /*this is to put the lnks on the same row*/
+    margin: 0 15px; 
+}
+
+nav a { /*this selects all links inside nav*/
+    color: white;
+    text-decoration:none;  /*remove underline of the links*/
+}
+
+nav a:hover {
+    background-color:#ffffff;
+    color:black;
+    padding: 2px 3px;
+}
+
+h1, h2 {
+    text-align: center;
+    color: #333;
+}
+
+section {
+    padding: 20px;
+    margin: 10px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1); /* This creates a box like design in my element, the 0 is for 
+                                                    horizontal offset, 5px for vertical, 5px for blur radius */
+}
+
+.button {
+    text-decoration: none; /* This removes the underline from the link */
+    display: inline-block; /* It makes the link behave like a block element */
+    padding: 5px 10px; 
+    background-color: hsl(0, 100%, 38%); 
+    color: white; /* for text color */
+    border-radius: 4px; /* It makes the corners round */
+}
+    
+.button:hover {   /* It changes the color of the button when the mouse cursor hovers*/
+        background-color: #ff0000;
+}
+
